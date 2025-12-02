@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "name": "无气矿泉水",
+        "description": "无气矿泉水，500 mL",
+        "price": 9.90,
+        "images": [
+            "assets/products/agua-sem-gas.svg",
+            "https://placehold.co/150x150/3b82f6/ffffff?text=%E6%B0%B4"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 2,
+        "name": "有气矿泉水",
+        "description": "有气矿泉水，500 mL",
+        "price": 9.90,
+        "images": ["assets/products/agua-com-gas.webp"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 3,
+        "name": "汤力水",
+        "description": "汤力矿泉水，500 mL",
+        "price": 9.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=%E6%B0%B4"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 4,
+        "name": "椰子水",
+        "description": "天然椰子水",
+        "price": 18.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=%E6%A4%B0%E5%AD%90"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 5,
+        "name": "罐装汽水",
+        "description": "可乐、瓜拉纳、芬达、苏打口味汽水",
+        "price": 9.90,
+        "images": [
+            "assets/products/refrigerante.svg",
+            "https://placehold.co/150x150/3b82f6/ffffff?text=%E6%B1%BD%E6%B0%B4"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 6,
+        "name": "Mate Leão",
+        "description": "Mate Leão 茶和柠檬味马黛茶，350 mL",
+        "price": 12.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Mate"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 7,
+        "name": "Lipton Ice Tea",
+        "description": "立顿冰茶，350 mL",
+        "price": 12.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Lipton"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 8,
+        "name": "Brahma 355mL",
+        "description": "Brahma 啤酒，355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Brahma"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 9,
+        "name": "Corona",
+        "description": "Corona 啤酒，355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Corona"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 10,
+        "name": "Budweiser",
+        "description": "Budweiser 啤酒，355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Budweiser"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 11,
+        "name": "Stella",
+        "description": "Stella 啤酒，355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Stella"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 12,
+        "name": "Spaten",
+        "description": "Spaten 啤酒，500 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Spaten"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 13,
+        "name": "Colorado",
+        "description": "Colorado Ribeirão 啤酒，500 mL",
+        "price": 39.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Colorado"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 14,
+        "name": "Colorado",
+        "description": "Colorado Indica 啤酒，355 mL",
+        "price": 24.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Colorado"],
+        "currentImageIndex": 0
+    }
+]

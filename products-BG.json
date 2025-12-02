@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "name": "Вода Без Газ",
+        "description": "Минерална вода без газ, 500 mL",
+        "price": 9.90,
+        "images": [
+            "assets/products/agua-sem-gas.svg",
+            "https://placehold.co/150x150/3b82f6/ffffff?text=%D0%92%D0%BE%D0%B4%D0%B0"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 2,
+        "name": "Вода С Газ",
+        "description": "Минерална вода с газ, 500 mL",
+        "price": 9.90,
+        "images": ["assets/products/agua-com-gas.webp"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 3,
+        "name": "Тоник Вода",
+        "description": "Минерална тонизираща вода, 500 mL",
+        "price": 9.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=%D0%92%D0%BE%D0%B4%D0%B0"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 4,
+        "name": "Кокосова Вода",
+        "description": "Натурална кокосова вода",
+        "price": 18.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=%D0%9A%D0%BE%D0%BA%D0%BE%D1%81"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 5,
+        "name": "Газирана Напитка В Кутия",
+        "description": "Газирани напитки с вкус на Кола, Гуарана, Фанта и Сода",
+        "price": 9.90,
+        "images": [
+            "assets/products/refrigerante.svg",
+            "https://placehold.co/150x150/3b82f6/ffffff?text=%D0%9D%D0%B0%D0%BF%D0%B8%D1%82%D0%BA%D0%B0"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 6,
+        "name": "Mate Leão",
+        "description": "Чай Mate Leão и лимонов мате, 350 mL",
+        "price": 12.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Mate"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 7,
+        "name": "Lipton Ice Tea",
+        "description": "Студен чай Lipton, 350 mL",
+        "price": 12.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Lipton"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 8,
+        "name": "Brahma 355mL",
+        "description": "Бира Brahma, 355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Brahma"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 9,
+        "name": "Corona",
+        "description": "Бира Corona, 355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Corona"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 10,
+        "name": "Budweiser",
+        "description": "Бира Budweiser, 355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Bud"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 11,
+        "name": "Stella",
+        "description": "Бира Stella, 355 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Stella"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 12,
+        "name": "Spaten",
+        "description": "Бира Spaten, 500 mL",
+        "price": 19.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Spaten"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 13,
+        "name": "Colorado",
+        "description": "Бира Colorado Ribeirão, 500 mL",
+        "price": 39.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Colorado"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 14,
+        "name": "Colorado",
+        "description": "Бира Colorado Indica, 355 mL",
+        "price": 24.00,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Colorado"],
+        "currentImageIndex": 0
+    }
+]

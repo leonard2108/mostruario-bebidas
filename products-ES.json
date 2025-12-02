@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "name": "Agua Sin Gas",
+        "description": "Agua mineral sin gas, 500 mL",
+        "price": 9.90,
+        "images": [
+            "assets/products/agua-sem-gas.svg",
+            "https://placehold.co/150x150/3b82f6/ffffff?text=Água+Sem+Gás"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 2,
+        "name": "Agua Con Gas",
+        "description": "Agua mineral con gas, 500 mL",
+        "price": 9.90,
+        "images": ["assets/products/agua-com-gas.webp"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 3,
+        "name": "Agua Tónica",
+        "description": "Agua mineral tónica, 500 mL",
+        "price": 9.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Água+Tônica"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 4,
+        "name": "Agua De Coco",
+        "description": "Agua de coco natural",
+        "price": 18.90,
+        "images": ["https://placehold.co/150x150/3b82f6/ffffff?text=Água+de+Coco"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 5,
+        "name": "Refresco En Lata",
+        "description": "Refrescos con sabor Cola, Guaraná, Fanta y Soda",
+        "price": 9.90,
+        "images": [
+            "assets/products/refrigerante.svg",
+            "httpsplacehold.co/150x150/3b82f6/ffffff?text=Refrigerante+Lata"
+        ],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 6,
+        "name": "Mate Leão",
+        "description": "Té Mate Leão y Mate Leão Limón, 350 mL",
+        "price": 12.00,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Mate+Leão"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 7,
+        "name": "Lipton Ice Tea",
+        "description": "Té Lipton Ice Tea, 350 mL",
+        "price": 12.00,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Lipton+Ice+Tea"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 8,
+        "name": "Brahma 355mL",
+        "description": "Cerveza Brahma, 355 mL",
+        "price": 19.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Brahma+355mL"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 9,
+        "name": "Corona",
+        "description": "Cerveza Corona, 355 mL",
+        "price": 19.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Corona"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 10,
+        "name": "Budweiser",
+        "description": "Cerveza Budweiser, 355 mL",
+        "price": 19.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Budweiser"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 11,
+        "name": "Stella",
+        "description": "Cerveza Stella, 355 mL",
+        "price": 19.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Stella"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 12,
+        "name": "Spaten",
+        "description": "Cerveza Spaten, 500 mL",
+        "price": 19.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Spaten"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 13,
+        "name": "Colorado",
+        "description": "Cerveza Colorado Ribeirão, 500 mL",
+        "price": 39.90,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Colorado"],
+        "currentImageIndex": 0
+    },
+    {
+        "id": 14,
+        "name": "Colorado",
+        "description": "Cerveza Colorado Indica, 355 mL",
+        "price": 24.00,
+        "images": ["httpsplacehold.co/150x150/3b82f6/ffffff?text=Colorado+peq"],
+        "currentImageIndex": 0
+    }
+]
