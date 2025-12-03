@@ -1,1 +1,6 @@
-
+{
+  "bgUrl": "",
+  "bgFit": "cover",
+  "bgPos": "center center",
+  "bgOpacity": "0.15"
+}
