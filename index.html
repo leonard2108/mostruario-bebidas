@@ -3,22 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title data-i18n="title">Catálogo de Produtos</title>
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- Fundo -->
+    <div class="bg"></div>
 
-    <!-- Fundo visual -->
-    <div class="bg" aria-hidden="true"></div>
-
+    <!-- Topbar -->
     <header class="topbar">
         <h1 data-i18n="header">Catálogo de Produtos</h1>
 
         <div class="controls">
-            <label for="search" class="sr-only" data-i18n="searchLabel">Pesquisar Produtos</label>
-            <input id="search" type="search" placeholder="Pesquisar Produtos" data-i18n-placeholder="search-placeholder" />
+            <label for="search" class="sr-only" data-i18n="searchLabel">
+                Pesquisar Produtos
+            </label>
 
+            <input
+                id="search"
+                type="search"
+                placeholder="Pesquisar Produtos"
+                data-i18n-placeholder="search-placeholder"
+            />
+
+            <!-- SELECTOR DE IDIOMA -->
             <select id="language" aria-label="Idioma">
                 <option value="pt">PT</option>
                 <option value="en">EN</option>
@@ -36,108 +47,56 @@
                 <option value="pl">PL</option>
                 <option value="ar">AR</option>
             </select>
+
+            <!-- Ícone de configurações de fundo -->
+            <button id="bg-settings" class="icon-button" aria-label="Configurações de fundo">
+                🖼️
+            </button>
         </div>
     </header>
 
+    <!-- Área de produtos -->
     <main class="products-container" id="products-container">
-        <!-- Produtos carregados pelo JS -->
+        <!-- Preenchido dinamicamente -->
     </main>
 
-    <!-- ========================================================= -->
-    <!--              PAINEL SECRETO (APENAS ADMIN)               -->
-    <!-- ========================================================= -->
-
-    <div id="admin-bg-modal" class="modal" hidden>
+    <!-- Modal de configurações de fundo -->
+    <div id="admin-bg-modal">
         <div class="modal-content">
-            <h2>Admin - Configurar Fundo</h2>
+            <h2>Configurações de Fundo</h2>
 
-            <label>URL da imagem</label>
-            <input id="admin-bg-url" type="text" placeholder="https://exemplo.com/imagem.webp">
+            <div class="row">
+                <label>URL da imagem:</label>
+                <input type="text" id="admin-bg-url" placeholder="https://exemplo.com/bg.png" />
+            </div>
 
-            <label>Ajuste (fit)</label>
-            <select id="admin-bg-fit">
-                <option value="cover">cover</option>
-                <option value="contain">contain</option>
-                <option value="auto">auto</option>
-                <option value="height">height</option>
-            </select>
+            <div class="row">
+                <label>Ajuste da imagem:</label>
+                <select id="admin-bg-fit">
+                    <option value="cover">Cobrir</option>
+                    <option value="contain">Conter</option>
+                    <option value="auto">Auto</option>
+                </select>
+            </div>
 
-            <label>Posição</label>
-            <input id="admin-bg-position" type="text" placeholder="center center">
+            <div class="row">
+                <label>Posição (e.g. center top):</label>
+                <input type="text" id="admin-bg-position" value="center center" />
+            </div>
 
-            <label>Opacidade (0 a 1)</label>
-            <input id="admin-bg-opacity" type="number" min="0" max="1" step="0.05" value="0.35">
+            <div class="row">
+                <label>Opacidade do overlay (0 a 1):</label>
+                <input type="text" id="admin-bg-opacity" value="0.15" />
+            </div>
 
-            <div class="modal-actions">
-                <button id="admin-bg-save" class="button">Salvar</button>
-                <button id="admin-bg-cancel" class="button">Fechar</button>
+            <div class="actions">
+                <button id="admin-bg-cancel">Cancelar</button>
+                <button id="admin-bg-save">Salvar</button>
             </div>
         </div>
     </div>
 
-    <!-- ========================================================= -->
-    <!--              SCRIPT PARA ABRIR O PAINEL SECRETO          -->
-    <!-- ========================================================= -->
-    <script>
-        let clickTimer = null;
-
-        document.body.addEventListener("click", () => {
-            if (clickTimer) {
-                clickTimer = null;
-                const senha = prompt("Digite a senha de administrador:");
-                if (senha === "admin1234") {
-                    document.getElementById("admin-bg-modal").hidden = false;
-                } else {
-                    alert("Senha incorreta!");
-                }
-            } else {
-                clickTimer = setTimeout(() => clickTimer = null, 250);
-            }
-        });
-
-        // Fechar modal
-        document.getElementById("admin-bg-cancel").onclick = () => {
-            document.getElementById("admin-bg-modal").hidden = true;
-        };
-
-        // Salvar configurações
-        document.getElementById("admin-bg-save").onclick = () => {
-            const url = document.getElementById("admin-bg-url").value.trim();
-            const fit = document.getElementById("admin-bg-fit").value;
-            const pos = document.getElementById("admin-bg-position").value.trim();
-            const opacity = document.getElementById("admin-bg-opacity").value;
-
-            const bg = document.querySelector(".bg");
-
-            if (url) bg.style.backgroundImage = `url('${url}')`;
-            bg.style.backgroundSize = fit;
-            bg.style.backgroundPosition = pos;
-            bg.style.opacity = opacity;
-
-            localStorage.setItem("bg-url", url);
-            localStorage.setItem("bg-fit", fit);
-            localStorage.setItem("bg-position", pos);
-            localStorage.setItem("bg-opacity", opacity);
-
-            alert("Configurações salvas!");
-        };
-
-        // Carregar config salva
-        window.addEventListener("load", () => {
-            const bg = document.querySelector(".bg");
-            
-            const url = localStorage.getItem("bg-url");
-            const fit = localStorage.getItem("bg-fit");
-            const pos = localStorage.getItem("bg-position");
-            const op = localStorage.getItem("bg-opacity");
-
-            if (url) bg.style.backgroundImage = `url('${url}')`;
-            if (fit) bg.style.backgroundSize = fit;
-            if (pos) bg.style.backgroundPosition = pos;
-            if (op) bg.style.opacity = op;
-        });
-    </script>
-
+    <!-- Script principal -->
     <script src="app.js"></script>
 </body>
 </html>
