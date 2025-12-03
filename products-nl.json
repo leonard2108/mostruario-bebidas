@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Water Zonder Gas",
-    "description": "Bronwater zonder koolzuur adaaaa, 500 mL",
+    "description": "Bronwater zonder koolzuur, 500 mL",
     "price": 4.50,
     "image": "assets/images/agua-sem-gas.svg"
   },
@@ -98,4 +98,5 @@
     "image": "assets/images/redbull.svg"
   }
 ]
+
 
