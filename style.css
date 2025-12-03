@@ -217,4 +217,69 @@ main { padding: 24px; }
 @media (max-width: 560px) {
   .lang-grid { grid-template-columns: 1fr; }
   input[type="search"] { min-width: 0; width: 40vw; }
+
 }
+:root{
+  /* Variáveis que controlam o background */
+  --bg-image: none;
+  --bg-fit: cover;          /* cover | contain | auto (ou 'height' via JS) */
+  --bg-position: center center;
+  --bg-overlay: rgba(0,0,0,0.15); /* overlay padrão (ajuste se quiser) */
+}
+
+/* elemento que tu usa como fundo (no index.html tem .bg) */
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--bg-image);
+  background-size: var(--bg-fit);
+  background-position: var(--bg-position);
+  background-repeat: no-repeat;
+  min-height: 100vh;      /* garante altura total */
+  width: 100%;
+}
+
+/* overlay opcional sobre o bg (se estiver usando) */
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-overlay);
+  pointer-events: none;
+}
+
+/* Força o cover completo quando a opção é 'height' (usaremos JS para isto) */
+.bg.height-fit {
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: scroll;
+}
+
+/* Modal admin (oculto por padrão) */
+#admin-bg-modal {
+  position: fixed;
+  inset: 0;
+  display: none;           /* oculto por padrão */
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+#admin-bg-modal .modal-content {
+  width: min(720px, 95%);
+  background: var(--card, #fff);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+#admin-bg-modal .row { margin-bottom: 12px; }
+#admin-bg-modal label { display:block; font-size: .9rem; margin-bottom:6px; }
+#admin-bg-modal input[type="text"], #admin-bg-modal input[type="url"], #admin-bg-modal select {
+  width: 100%; padding:8px 10px; border-radius:6px; border:1px solid #ccc;
+}
+#admin-bg-modal .actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+#admin-bg-modal .actions button { padding:8px 12px; border-radius:6px; cursor:pointer; }
