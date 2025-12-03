@@ -19,7 +19,7 @@ const $$ = (s) => Array.from(document.querySelectorAll(s));
    ADMIN — HASH DA SENHA (dc-21-08)
    ======================================================= */
 const ADMIN_HASH =
-  "8ae080239c616ab3d2c399da3ae6550ccc78a83fb0f1c3eab08bfb41bf164e70";
+  "442c5f7410459222f83c2dd022e3d2e541bbc1629810c3c206a2503ab2d7ed06b";
 
 async function sha256(str) {
   const buf = await crypto.subtle.digest(
@@ -307,3 +307,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   applyTranslation();
   loadProducts();
 });
+
